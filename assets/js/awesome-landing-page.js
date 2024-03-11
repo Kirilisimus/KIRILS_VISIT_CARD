@@ -113,52 +113,6 @@
         }
 
         
-        // const cards = document.querySelectorAll(".card");
-        // // const onDocumentMouseMoveHandler = (evt) => {
-        // //   evt.preventDefault();
-
-        // //   requestAnimationFrame(() => {
-        // //     if (!evt.target.closest('.card')) {
-        // //       card.style.transform = 'perspective(1000px) scale(1) rotateX(0) rotateY(0)';
-        // //     }
-        // //   });
-        // // };
-        // // document.addEventListener('mousemove', onDocumentMouseMoveHandler)
-        // cards.forEach((card) => {
-        // const height = card.clientHeight;
-        // const width = card.clientWidth;
-
-        // // const mouseMoveHandler = (evt) => {
-        // //     evt.preventDefault();
-
-        // //     requestAnimationFrame(() => {
-        // //     const xRotation = -7 * ((evt.layerY - height / 2) / height);
-        // //     const yRotation = 5 * ((evt.layerX - width / 2) / width);
-
-        // //     card.style.transform = `perspective(1000px) scale(1.00) rotateX(${xRotation}deg) rotateY(${yRotation}deg)`;
-        // //     });
-        // // };
-
-
-        // // card.addEventListener("mouseenter", (evt) => {
-        // //     evt.preventDefault();
-        // //     card.addEventListener("mousemove", mouseMoveHandler);
-        // // });
-
-        // // card.addEventListener("mouseout", (evt) => {
-        // //     evt.preventDefault();
-        // //     card.style.transform = "perspective(1000px) scale(1) rotateX(0) rotateY(0)";
-        // //     card.removeEventListener("mousemove", mouseMoveHandler);
-        // // });
-        
-        // // card.addEventListener("click", (evt) => {
-        // //     evt.preventDefault();
-        // //     card.style.animation = "spin 2s ease-in-out";
-        // //     setTimeout(() => {      
-        // //     card.style.animation = '';
-        // //     }, 1000);
-        // // });
-        //  });
 
         const menuItems = document.querySelectorAll('.menu div');
         const contentItems = document.querySelectorAll('.content');
@@ -264,8 +218,8 @@
 
         function openEmailClientOrForm() {
             // Создаем предварительно заполненные данные для письма
-            var subject = 'Тема вашего письма';
-            var body = 'Текст вашего сообщения';
+            var subject = 'Привет, хочу поделаться контактом';
+            var body = 'Привет, я хочу поделиться этой онлайн визиткой: https://kirilisimus.github.io/KIRILS_VISIT_CARD/';
             
             // Формируем ссылку с предварительно заполненными данными
             var mailtoLink = 'mailto:?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);

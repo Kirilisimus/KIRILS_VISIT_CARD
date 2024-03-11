@@ -2502,10 +2502,12 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
   flex-wrap: wrap;
   color: black;
   width: 100%;
+  flex-direction: column;
 }
 
 .content.active#me-content{
   height: 100%;
+  justify-content: center;
 }
 
 .content.active#qr-content{
@@ -2557,6 +2559,18 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
 }
 
 .infoCustomer{
+  font-size: 20px;
+}
+
+.infoCustomerName{
+  font-size: 70px;
+}
+
+.infoCustomerCompany{
+  font-size: 60px;
+}
+
+.infoCustomerDescription{
   font-size: 30px;
 }
 
@@ -2572,7 +2586,7 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
   width: fit-content;
   position: relative;
   display: flex;
-  z-index: 999;
+  margin: 10px;
 }
 
 .contactsWrap{
@@ -2582,12 +2596,18 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
   flex-direction: column;
 }
 
+.card_content{
+  font-size: 30px;
+  margin: 10px;
+}
+
 .socialWrap{
   display: flex;
   min-width: 100%;
   height: fit-content;
   flex-direction: column;
   margin-top: 20px;
+  font-size: 30px;
 }
 
 .logoContacts{
@@ -2610,6 +2630,9 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
 
 .cardСontent{
   font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .description{
@@ -2617,8 +2640,8 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
 }
 
 #qrImage{
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: auto;
 }
 
 .text-center{
@@ -2642,4 +2665,61 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
 
 .shareButton{
   margin: 20px;
+}
+
+.ShareImg{
+  width: 100px;
+  height: auto;
+}
+
+.shareDescription{
+  margin: 20px;
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Стили для маленьких экранов (телефоны и т. д.) */
+
+  /* Стили для контента в разделе Информация */
+  .content.active#me-content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .infoCustomerName{
+    font-size: 10px;
+  }
+  .infoCustomerCompany{
+    font-size: 10px;
+  }
+  .infoCustomerDescription{
+    font-size: 10px;
+  }
+
+  .infoCustomer{
+    font-size: 10px;
+  }
+  .socialWrap{
+    font-size: 10px;
+  }
+  .contactMeWrap{
+    font-size: 10px;
+  }
+
+  .logoContacts{
+    height: 50px;
+  }
+
+  /* Менюшка */
+  .menuButton{
+    height: 50px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Стили для средних экранов (планшеты и т. д.) */
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Стили для больших экранов (мониторы и т. д.) */
 }

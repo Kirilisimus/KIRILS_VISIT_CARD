@@ -2677,7 +2677,8 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
   display: flex;
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 600px), (max-height: 900px) {
   /* Стили для маленьких экранов (телефоны и т. д.) */
 
   /* Стили для контента в разделе Информация */
@@ -2686,10 +2687,10 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
     flex-wrap: wrap;
   }
   .infoCustomerName{
-    font-size: 50px;
+    font-size: 20px;
   }
   .infoCustomerCompany{
-    font-size: 50px;
+    font-size: 20px;
   }
   .infoCustomerDescription{
     font-size: 20px;

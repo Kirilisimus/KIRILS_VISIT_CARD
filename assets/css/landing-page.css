@@ -2357,7 +2357,7 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
   }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .fixed-plugin {
     position: absolute;
   }
@@ -2444,7 +2444,7 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
   .landing-page .navbar-top {
     padding-top: 10px;
   }
-}
+} */
 
 .urlBottom {
   background-color: whitesmoke;
@@ -2713,6 +2713,13 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
   .menuButton{
     height: 50px;
     font-size: 10px;
+  }
+
+  .card{
+    min-width: 100px;
+  }
+  .menu{
+    min-width: 100px;
   }
 }
 

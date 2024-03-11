@@ -2678,7 +2678,7 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
 }
 
 
-@media only screen and (max-width: 600px), (max-height: 1000px) {
+@media only screen and (max-width: 670px), (max-height: 800px) {
   /* Стили для маленьких экранов (телефоны и т. д.) */
 
   /* Стили для контента в разделе Информация */
@@ -2726,53 +2726,32 @@ box-shadow: -2px 29px 114px -28px rgba(144, 0, 255, 0.623);
   .content.active#me-content{
     justify-content: flex-start;
   }
+
+  .card_content{
+    font-size: 20px;
+    margin: 0px;
+  }
+
+  #qrImage{
+    width: 300px;
+  }
+
+  .ShareImg{
+    width: 30px;
+  }
+
+  .cardСontent{
+    margin:0 20px;
+  }
 }
-
-/* @media only screen and (max-width: 600px), (max-height: 900px) {
-
-  .content.active#me-content{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .infoCustomerName{
-    font-size: 20px;
-  }
-  .infoCustomerCompany{
-    font-size: 20px;
-  }
-  .infoCustomerDescription{
-    font-size: 20px;
-  }
-
-  .infoCustomer{
-    font-size: 20px;
-  }
-  .socialWrap{
-    font-size: 20px;
-  }
-  .contactMeWrap{
-    font-size: 20px;
-  }
-
-  .logoContacts{
-    height: 70px;
-  }
-
-  .menuButton{
-    height: 50px;
-    font-size: 10px;
-  }
-
-  .card{
-    min-width: 100px;
-  }
-  .menu{
-    min-width: 100px;
-  }
-} */
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   /* Стили для средних экранов (планшеты и т. д.) */
+
+  #qrImage{
+    width: 400px;
+  }
+
 }
 
 @media only screen and (min-width: 1025px) {
